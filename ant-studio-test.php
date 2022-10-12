@@ -39,13 +39,6 @@ add_action(
 	'admin_enqueue_scripts', 
 	function () {
 		wp_enqueue_script('public_script', ANT_URI .'public/assets/js/public.js', array(), '1.0', true);
-		wp_localize_script(
-			'public_script',
-			'custom_data',
-			[
-				'admin-ajax' => admin_url('admin-ajax.php')
-			]
-		);
 	}
 );
 
@@ -60,7 +53,6 @@ add_action(
 			'public_script',
 			'custom_data',
 			[
-				'admin-ajax' => admin_url('admin-ajax.php'),
 				'contact-api' => ANT_URI . 'api/contact.php'
 			]
 		);
