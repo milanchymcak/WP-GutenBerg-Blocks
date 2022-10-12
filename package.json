@@ -29,5 +29,13 @@
 	},
 	"dependencies": {
 		"@wordpress/core-data": "^5.2.0"
-	}
+	},
+	"files": [ 
+		"/api/*",
+		"/build/*",
+		"/inc/*",
+		"/locales/*",
+		"/public/*",
+		"*.php"
+	 ]
 }
