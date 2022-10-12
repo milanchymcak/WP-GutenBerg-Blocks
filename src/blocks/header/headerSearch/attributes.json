@@ -1,0 +1,8 @@
+{
+    "search": {
+        "type": "string",
+        "selector": "input",
+        "attribute": "placeholder",
+        "default": "Napište co hledáte ..."
+    }
+}

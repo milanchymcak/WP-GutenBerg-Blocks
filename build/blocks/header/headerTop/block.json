@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "mchymcak/headertop",
+  "title": "Ant Studio - Header - Horní Část",
+  "category": "theme",
+  "icon": "admin-settings",
+  "description": "Header - Horní Část",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "ant-studio-example",
+  "editorScript": "file:./index.js",
+  "parent": [
+    "mchymcak/headernav"
+  ]
+}

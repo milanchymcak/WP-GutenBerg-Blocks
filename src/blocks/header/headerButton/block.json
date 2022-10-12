@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "mchymcak/headerbutton",
+	"title": "Ant Studio - Poptávka Tlačítko",
+	"icon": "button",
+	"example": {},
+	"description": "Poptávka Tlačítko",
+	"category": "theme",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "ant-studio-example",
+	"editorScript": "file:./index.js",
+	"parent": [ "mchymcak/headerblock" ]
+}

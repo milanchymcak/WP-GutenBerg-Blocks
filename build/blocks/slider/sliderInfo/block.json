@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "mchymcak/sliderinfo",
+  "title": "Ant Studio - Slider - Info",
+  "icon": "tag",
+  "example": {},
+  "description": "Slider - Info",
+  "category": "theme",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "ant-studio-example",
+  "editorScript": "file:./index.js",
+  "parent": [
+    "mchymcak/sliderblock"
+  ]
+}

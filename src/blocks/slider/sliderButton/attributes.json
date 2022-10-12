@@ -1,0 +1,57 @@
+{
+    "text": {
+        "type": "string",
+        "selector": "a",
+        "default": "Více"
+    },
+    "href_1": {
+        "type": "string",
+        "selector": "a",
+        "default": "#"
+    },
+    "href_2": {
+        "type": "string",
+        "selector": "a",
+        "default": "#"
+    },
+    "href_3": {
+        "type": "string",
+        "selector": "a",
+        "default": "#"
+    },
+    "href_4": {
+        "type": "string",
+        "selector": "a",
+        "default": "#"
+    },
+    "type": {
+        "type": "string",
+        "selector": "a",
+        "attribute": "type",
+        "default": "submit"
+    },
+    "bg_Color": {
+        "type": "string",
+        "selector": "a",
+        "attribute": "background-color",
+        "default": "#af0b2b"
+    },
+    "text_Color": {
+        "type": "string",
+        "selector": "a",
+        "attribute": "color",
+        "default": "#fff"
+    },
+    "border_Color": {
+        "type": "string",
+        "selector": "a",
+        "attribute": "border-color",
+        "default": "#af0b2b"
+    },
+    "border_Width": {
+        "type": "string",
+        "selector": "a",
+        "attribute": "border-width",
+        "default": "1px"
+    }
+}

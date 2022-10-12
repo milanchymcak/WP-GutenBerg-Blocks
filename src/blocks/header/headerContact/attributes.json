@@ -1,0 +1,26 @@
+{
+    "text_Color": {
+        "type": "string",
+        "selector": "div",
+        "attribute": "color",
+        "default": "#AF0B2B"
+    },
+    "title": {
+        "type": "string",
+        "selector": "div",
+        "attribute": "value",
+        "default": "Konzultační linka"
+    },
+    "phone": {
+        "type": "string",
+        "selector": "div",
+        "attribute": "value",
+        "default": "+420 376 709 850"
+    },
+    "opening_hours": {
+        "type": "string",
+        "selector": "div",
+        "attribute": "value",
+        "default": "Po-Pá 07:00-15:30"
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "mchymcak/headerlogin",
+  "title": "Ant Studio - Header - Login",
+  "icon": "admin-network",
+  "example": {},
+  "description": "Header - Login",
+  "category": "theme",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "ant-studio-example",
+  "editorScript": "file:./index.js",
+  "parent": [
+    "mchymcak/headertop"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+    "text_Color": {
+        "type": "string",
+        "selector": "div",
+        "attribute": "color",
+        "default": "#AF0B2B"
+    },
+    "slider_1": {
+        "type": "string",
+        "selector": "div",
+        "attribute": "value",
+        "default": "Default Text"
+    },
+    "slider_2": {
+        "type": "string",
+        "selector": "div",
+        "attribute": "value",
+        "default": "Default Text"
+    },
+    "slider_3": {
+        "type": "string",
+        "selector": "div",
+        "attribute": "value",
+        "default": "Default Text"
+    },
+    "slider_4": {
+        "type": "string",
+        "selector": "div",
+        "attribute": "value",
+        "default": "Default Text"
+    }
+}

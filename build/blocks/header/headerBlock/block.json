@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "mchymcak/headerblock",
+  "version": "1.0",
+  "title": "Ant Studio - Header Block",
+  "category": "theme",
+  "icon": "laptop",
+  "description": "Fixovaná hlavička.",
+  "supports": {
+    "html": false
+  },
+  "example": {},
+  "keywords": [
+    "header",
+    "hlavicka",
+    "ant studio"
+  ],
+  "textdomain": "ant-studio-example",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

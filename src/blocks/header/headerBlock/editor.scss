@@ -1,0 +1,36 @@
+
+.header-block {
+	display: block;
+	max-width: 1140px;
+	width: 100%;
+	height: 150px;
+	margin: 0 auto;
+
+	.small-logo {
+		display: none !important;
+	}
+
+	.block-editor-block-list__layout {
+		display: flex;
+	}
+
+	.header-nav {
+
+		.block-editor-block-list__layout {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.header-top-menu {
+			padding: 0 0 15px;
+			width: 100%;
+			justify-content: flex-end;
+		}
+
+		.header-bottom-menu {
+			width: 100%;
+			justify-content: flex-end;
+		}
+	}
+
+}

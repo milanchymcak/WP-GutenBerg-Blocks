@@ -1,0 +1,138 @@
+.newest-articles {
+	max-width: 1140px;
+	margin: 0 auto 25px;
+	padding: 25px 0 0;
+
+	.newest-header {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+
+		h2 {
+			font-size: 38px;
+			font-weight: 500;
+			color: #414755;
+			padding-left: 5px;
+
+			@media only screen and (max-width: 768px) {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+		}
+
+		a {
+			letter-spacing: 0.15px;
+			color: #af0b2b;
+			font-weight: 500;
+			text-decoration: none;
+			font-size: 15px;
+
+			&:hover {
+				color: #74081d !important;
+			}
+
+			@media only screen and (max-width: 768px) {
+				width: 100%;
+				margin-bottom: 25px;
+			}
+		}
+
+		i {
+			margin-left: 10px;
+		}
+	}
+
+	.newest-items {
+		display: flex;
+		flex-wrap: wrap;
+
+		.newest-item {
+			width: 25%;
+			background: #fff;
+			border-left: 5px solid #f3f5f6;
+			border-right: 5px solid #f3f5f6;
+			padding: 15px;
+			margin-bottom: 15px;
+
+			.newest-tags {
+				margin-bottom: 15px;
+
+				a {
+					background: #f3f5f6 0% 0% no-repeat padding-box;
+					border-radius: 16px;
+					padding: 5px 15px;
+					text-decoration: none;
+					letter-spacing: 0.15px;
+					color: #68707c;
+					font-size: 15px;
+					margin: 0 10px 10px 0;
+					display: inline-block;
+				}
+			}
+
+			.newest-category {
+
+				a {
+					text-decoration: none;
+					color: #af0b2b;
+					font-size: 15px;
+
+					&:hover {
+						color: #74081d !important;
+					}
+				}
+			}
+
+			.newest-date {
+				color: #8c97a8;
+				font-size: 15px;
+				letter-spacing: 0.15px;
+			}
+
+			.newest-title {
+				font-size: 22px;
+				overflow: hidden;
+				font-weight: 700;
+				color: #414755;
+			}
+
+			.newest-excerpt {
+				font-size: 15px;
+				letter-spacing: 0.15px;
+				color: #68707c;
+				overflow: hidden;
+			}
+
+			.newest-link {
+
+				a {
+					text-decoration: none;
+					color: #af0b2b;
+					font-size: 15px;
+					letter-spacing: 0.15px;
+
+					&:hover {
+						color: #74081d !important;
+					}
+				}
+
+				i {
+					margin-left: 10px;
+				}
+			}
+
+			@media only screen and (max-width: 980px) {
+				width: 33.3333333%;
+			}
+
+			@media only screen and (max-width: 768px) {
+				width: 50%;
+			}
+
+			@media only screen and (max-width: 600px) {
+				width: 100%;
+			}
+		}
+	}
+}

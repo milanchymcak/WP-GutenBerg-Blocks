@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "mchymcak/headernav",
+  "title": "Ant Studio - Header - Nav",
+  "category": "theme",
+  "icon": "menu-alt3",
+  "description": "Header - Nav",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "ant-studio-example",
+  "editorScript": "file:./index.js",
+  "parent": [
+    "mchymcak/headerblock"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "mchymcak/headerlogo",
+  "title": "Ant Studio - Header - Logo",
+  "icon": "format-image",
+  "example": {},
+  "description": "Header - Logo",
+  "category": "theme",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "ant-studio-example",
+  "editorScript": "file:./index.js",
+  "parent": [
+    "mchymcak/headerblock"
+  ]
+}
