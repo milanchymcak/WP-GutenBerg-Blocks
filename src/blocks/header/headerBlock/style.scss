@@ -28,6 +28,7 @@ body {
 
 	&:not(.sticked) {
 		padding-top: 0 !important;
+		margin-top: 20px;
 	}
 
 	@media only screen and (max-width: 768px) {

@@ -24,12 +24,11 @@ registerBlockType( metadata.name, {
 						tagName="div"
 						allowedFormats={ [] }
 						value={
-							'<i class="fa fa-long-arrow-right" aria-hidden="true"></i>' +
 							attributes.info
 						}
 						className="slider-info-inner"
 						onChange={ ( val ) => {
-							setAttributes( { title: val } );
+							setAttributes( { info: val } );
 						} }
 					/>
 				</div>
