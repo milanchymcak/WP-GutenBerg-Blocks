@@ -6,6 +6,7 @@ import {
 	InspectorControls,
 	BlockControls,
 } from '@wordpress/block-editor';
+import IconSearch from '../../../svg/iconSearch';
 
 /**
  * Internal Data
@@ -52,7 +53,7 @@ registerBlockType( metadata.name, {
 						placeholder={ attributes.search }
 					/>
 					<button type="submit">
-						<i className="fa fa-search" aria-hidden="true"></i>
+						<IconSearch />
 					</button>
 				</form>
 			</>
@@ -72,7 +73,7 @@ registerBlockType( metadata.name, {
 					placeholder={ attributes.search }
 				/>
 				<button type="submit">
-					<i className="fa fa-search" aria-hidden="true"></i>
+					<IconSearch />
 				</button>
 			</form>
 		);

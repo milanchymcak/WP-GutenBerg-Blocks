@@ -1,17 +1,3 @@
-/**
- * Add Font Awesome Support
- */
-const checkFontAwesome = document.querySelector( '#fontawesome' );
-if ( checkFontAwesome === undefined || checkFontAwesome === null ) {
-	const fontAwesome = document.createElement( 'link' );
-	fontAwesome.type = 'text/css';
-	fontAwesome.rel = 'stylesheet';
-	fontAwesome.id = 'fontawesome';
-	fontAwesome.href =
-		'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
-	document.head.appendChild( fontAwesome );
-}
-
 window.addEventListener( 'load', () => {
 	/**
 	 * Sticky Header
@@ -143,14 +129,14 @@ window.addEventListener( 'load', () => {
 
 	// Sliders Tabs Automatically
 	const autoSlider = () => {
-		const sliderTabs = document.querySelectorAll( '.slider-tab' );
-		if ( sliderTabs !== undefined && sliderTabs !== null ) {
-			for ( const sliderTab of sliderTabs ) {
+		const sliderAutoTabs = document.querySelectorAll( '.slider-tab' );
+		if ( sliderAutoTabs !== undefined && sliderAutoTabs !== null ) {
+			for ( const sliderTab of sliderAutoTabs ) {
 				if ( sliderTab.classList.contains( 'active' ) ) {
 					const sliderTarget =
 						sliderTab.getAttribute( 'data-slider-target' );
 					let nextTarget = Number( sliderTarget ) + 1;
-					if ( nextTarget > sliderTabs.length ) nextTarget = 1;
+					if ( nextTarget > sliderAutoTabs.length ) nextTarget = 1;
 
 					// Swtich Tab
 					switchTab( nextTarget );

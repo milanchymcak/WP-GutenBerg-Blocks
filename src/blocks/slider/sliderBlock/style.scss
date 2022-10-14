@@ -1,11 +1,11 @@
 .slider-block {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 1140px;
+	max-width: var(--ant-studio-site-max-width);
 	width: 100%;
 	margin: 0 auto;
 	padding: 25px 0 0;
-	background: #fff;
+	background: var(--ant-studio-color-ffffff);
 
 	.slider-image {
 		width: 65%;
@@ -26,19 +26,20 @@
 
 		.slider-text-inner {
 			color: #ad102f;
-			font-weight: 700;
-			font-size: 22px;
+			font-weight: var(--ant-studio-font-weight-bold);
+			font-size: var(--ant-studio-font-size-22);
+			font-family: var(--ant-studio-font-family-din-2014);
 			display: none;
 			border-left: 2px solid;
 			padding: 20px 0 20px 15px;
-    		line-height: 1.5;
+			line-height: var(--ant-studio-line-spacing-25);
 
 			&.active {
 				display: block;
 			}
 
 			br {
-				margin: 5px 0px;
+				margin: 5px 0;
 				display: block;
 				content: " ";
 			}
@@ -55,16 +56,29 @@
 	.slider-info {
 		width: 90%;
 		text-align: center;
-		font-size: 22px;
-		font-weight: 700;
+		font-size: var(--ant-studio-font-size-22);
+		font-weight: var(--ant-studio-font-weight-bold);
+		font-family: var(--ant-studio-font-family-din-2014);
 		color: #722a2d;
 		padding-bottom: 15px;
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
 
-		i {
-			margin-right: 10px;
+		.slider-info-inner {
+			display: flex;
+			align-items: center;
+
+			svg {
+
+				path {
+					fill: #722a2d;
+				}
+			}
+
+			span {
+				margin-left: 10px;
+			}
 		}
 
 		@media only screen and (max-width: 768px) {
@@ -83,10 +97,10 @@
 			display: block;
 			text-decoration: none;
 			line-height: 1;
-			font-weight: 500;
+			font-weight: var(--ant-studio-font-weight-normal);
 
 			&:hover {
-				background: #74081d !important;
+				background: var(--ant-studio-color-74081d) !important;
 			}
 
 			@media only screen and (max-width: 768px) {
@@ -105,7 +119,7 @@
 		width: 100%;
 		display: flex;
 		justify-content: center;
-		background: #f3f5f6;
+		background: var(--ant-studio-color-f3f5f6);
 		padding: 15px 0;
 
 		@media only screen and (max-width: 768px) {
@@ -117,17 +131,17 @@
 		.slider-tab {
 			text-transform: uppercase;
 			margin: 0 15px;
-			color: #68707c;
-			font-weight: 700;
-			letter-spacing: 0.15px;
+			color: var(--ant-studio-color-68707c);
+			font-weight: var(--ant-studio-font-weight-bold);
+			letter-spacing: var(--ant-studio-character-spacing-0-15);
 			cursor: pointer;
 
 			&.active {
-				color: #af0b2b;
+				color: var(--ant-studio-color-af0b2b);
 			}
 
 			&:hover {
-				color: #74081d !important;
+				color: var(--ant-studio-color-74081d) !important;
 			}
 
 			@media only screen and (max-width: 768px) {

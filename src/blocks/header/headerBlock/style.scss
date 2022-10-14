@@ -1,44 +1,27 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-body {
-	background: #f3f5f6 !important;
-	font-family: Roboto, sans-serif !important;
-}
-
-.wp-site-blocks {
-	padding: 0 !important;
-}
-
 .header-block {
+	color: var(--ant-studio-color-ffffff);
 
 	.header-block-container {
-		max-width: 1140px;
+		max-width: var(--ant-studio-site-max-width);
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		margin: 0 auto;
+
+		@media only screen and (max-width: 768px) {
+			flex-wrap: wrap;
+			justify-content: space-around;
+			position: relative;
+		}
 	}
 
 	&:not(.sticked) {
 		padding-top: 0 !important;
-		margin-top: 20px;
-	}
-
-	@media only screen and (max-width: 768px) {
-		flex-wrap: wrap;
-		justify-content: space-around;
-		position: relative;
+		margin: 20px 0 40px;
 	}
 
 	&.sticked {
-		background: #fff;
+		background: var(--ant-studio-color-ffffff);
 		position: sticky;
 		top: 0;
 
@@ -75,19 +58,25 @@ body {
 
 	.header-mobile-menu {
 		display: none;
-		background: #414755;
+		background: var(--ant-studio-color-414755);
 		text-align: center;
 		cursor: pointer;
+		width: 40px;
+		height: 40px;
 
 		@media only screen and (max-width: 768px) {
-			display: block;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			position: absolute;
 			right: 0;
 		}
 
-		i {
-			padding: 15px;
-			color: #fff;
+		svg {
+
+			path {
+				fill: var(--ant-studio-color-ffffff);
+			}
 		}
 	}
 
@@ -122,29 +111,35 @@ body {
 				padding-top: 10px;
 
 				input {
-					color: #68707c;
+					color: var(--ant-studio-color-68707c);
 					padding: 0 12px;
 					height: 36px;
-					border: solid 1px #fff;
-					font-size: 15px;
-					background: #fff 0% 0% no-repeat padding-box;
+					border: solid 1px var(--ant-studio-color-ffffff);
+					font-size: var(--ant-studio-font-size-15);
+					background: var(--ant-studio-color-ffffff) 0% 0% no-repeat padding-box;
 					outline: 0;
 
 					&::placeholder {
-						letter-spacing: 0.15px;
-						color: #68707c;
-						font-size: 15px;
+						letter-spacing: var(--ant-studio-character-spacing-0-15);
+						color: var(--ant-studio-color-68707c);
+						font-size: var(--ant-studio-font-size-15);
 					}
 				}
 
 				button {
 					width: 36px;
 					height: 36px;
-					background: #414755;
-					border: solid 1px #414755;
+					background: var(--ant-studio-color-414755);
+					border: solid 1px var(--ant-studio-color-414755);
+					display: flex;
+					align-items: center;
+					justify-content: center;
 
-					i {
-						color: #fff;
+					svg {
+
+						path {
+							fill: var(--ant-studio-color-ffffff);
+						}
 					}
 				}
 
@@ -157,20 +152,21 @@ body {
 				margin-right: 65px;
 
 				.header-contact-title {
-					font-size: 15px;
-					letter-spacing: 0.15px;
-					color: #68707c;
-					font-weight: 500;
+					font-size: var(--ant-studio-font-size-15);
+					letter-spacing: var(--ant-studio-character-spacing-0-15);
+					color: var(--ant-studio-color-68707c);
+					font-weight: var(--ant-studio-font-weight-normal);
 				}
 
 				.header-contact-phone {
-					font-weight: 700;
 					display: block;
 					text-decoration: none;
-					font: normal normal bold 18px/20px DIN 2014;
+					font-family: var(--ant-studio-font-family-din-2014);
+					font-size: var(--ant-studio-font-size-18);
+					font-weight: var(--ant-studio-font-weight-bold);
 
 					&:hover {
-						color: #74081d !important;
+						color: var(--ant-studio-color-74081d) !important;
 					}
 				}
 
@@ -185,33 +181,48 @@ body {
 			.header-login {
 
 				.header-login-sub-title {
-					letter-spacing: 0.15px;
-					font-size: 15px;
-					color: #68707c;
+					letter-spacing: var(--ant-studio-character-spacing-0-15);
+					font-size: var(--ant-studio-font-size-15);
+					color: var(--ant-studio-color-68707c);
 				}
 
 				.header-login-title {
+					display: flex;
+					align-items: center;
 
 					span {
-						font-weight: 700;
+						font-weight: var(--ant-studio-font-weight-bold);
 						margin-right: 10px;
-						color: #414755;
-						font-size: 18px;
+						color: var(--ant-studio-color-414755);
+						font-size: var(--ant-studio-font-size-18);
+						font-family: var(--ant-studio-font-family-din-2014);
 					}
 
-					i {
-						color: #414755;
+					svg {
+
+						path {
+							fill: var(--ant-studio-color-414755);
+						}
 					}
 				}
 
 				.header-login-link {
 					text-decoration: none;
-					letter-spacing: 0.15px;
-					color: #af0b2b;
-					font-weight: 500;
+					letter-spacing: var(--ant-studio-character-spacing-0-15);
+					color: var(--ant-studio-color-af0b2b);
+					font-weight: var(--ant-studio-font-weight-normal);
+					display: flex;
+					align-items: center;
 
 					&:hover {
-						color: #74081d !important;
+						color: var(--ant-studio-color-74081d) !important;
+
+						svg {
+
+							path {
+								fill: var(--ant-studio-color-74081d);
+							}
+						}
 					}
 				}
 			}
@@ -226,12 +237,24 @@ body {
 
 				.wp-block-navigation-item__content {
 					margin-right: 5px;
-					font-size: 16px;
-					font-weight: 500;
+					font-size: var(--ant-studio-font-size-16);
+					font-weight: var(--ant-studio-font-weight-bold);
 					text-decoration: none;
+					color: var(--ant-studio-color-414755);
 
 					&:hover {
-						color: #74081d;
+						color: var(--ant-studio-color-74081d);
+					}
+				}
+
+				.wp-block-navigation__submenu-icon {
+					color: var(--ant-studio-color-414755);
+				}
+
+				.wp-block-navigation__submenu-container {
+
+					.wp-block-navigation-item__content {
+						font-weight: var(--ant-studio-font-weight-normal);
 					}
 				}
 			}
@@ -241,10 +264,10 @@ body {
 				display: block;
 				text-decoration: none;
 				line-height: 1;
-				font-weight: 500;
+				font-weight: var(--ant-studio-font-weight-normal);
 
 				&:hover {
-					background: #74081d !important;
+					background: var(--ant-studio-color-74081d) !important;
 				}
 			}
 
@@ -255,7 +278,7 @@ body {
 					display: flex;
 					flex-wrap: wrap;
 					width: 100%;
-					background: #fff;
+					background: var(--ant-studio-color-ffffff);
 					padding: 20px;
 
 					.wp-block-navigation {

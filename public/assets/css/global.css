@@ -1,0 +1,98 @@
+/*
+* Need to use absolute url as the source of the fonts
+* Gutenberg parses the stylesheet as inline style
+* Thus source urls will not work with relative path
+*/
+@font-face {
+	font-family: "DIN 2014";
+	font-style: normal;
+	font-weight: 700;
+	src: url("https://milanchymcak.mravenec.eu/wp-content/plugins/ant-studio-test/public/assets/fonts/din2014-bold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "DIN 2014";
+	font-style: normal;
+	font-weight: 500;
+	src: url("https://milanchymcak.mravenec.eu/wp-content/plugins/ant-studio-test/public/assets/fonts/din2014-light.woff") format("woff");
+}
+
+/* latin-ext */
+@font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+
+	/* Global */
+	--ant-studio-site-max-width: 1140px;
+
+	/* Colors: */
+	--ant-studio-color-ffffff: #fff;
+	--ant-studio-color-d0d8dc: #d0d8dc;
+	--ant-studio-color-f3f5f6: #f3f5f6;
+	--ant-studio-color-8c97a8: #8c97a8;
+	--ant-studio-color-68707c: #68707c;
+	--ant-studio-color-414755: #414755;
+	--ant-studio-color-2c303a: #2c303a;
+	--ant-studio-color-af0b2b: #af0b2b;
+	--ant-studio-color-74081d: #74081d;
+	--ant-studio-color-af0a2b: #af0a2b;
+
+	/* Font/text values */
+	--ant-studio-font-family-roboto: "Roboto", sans-serif;
+	--ant-studio-font-family-din-2014: "DIN 2014", sans-serif;
+	--ant-studio-font-style-normal: normal;
+	--ant-studio-font-weight-300: 300;
+	--ant-studio-font-weight-normal: 500;
+	--ant-studio-font-weight-bold: 700;
+	--ant-studio-font-size-15: 15px;
+	--ant-studio-font-size-16: 16px;
+	--ant-studio-font-size-18: 18px;
+	--ant-studio-font-size-22: 22px;
+	--ant-studio-font-size-28: 28px;
+	--ant-studio-font-size-32: 32px;
+	--ant-studio-font-size-38: 38px;
+	--ant-studio-font-size-50: 50px;
+	--ant-studio-character-spacing-0: 0;
+	--ant-studio-character-spacing-0-15: 0.15px;
+	--ant-studio-line-spacing-18: 18px;
+	--ant-studio-line-spacing-20: 20px;
+	--ant-studio-line-spacing-25: 25px;
+	--ant-studio-line-spacing-27: 27px;
+	--ant-studio-line-spacing-31: 31px;
+	--ant-studio-line-spacing-35: 35px;
+	--ant-studio-line-spacing-42: 42px;
+	--ant-studio-line-spacing-55: 55px;
+	--ant-studio-decoration-underline: underline;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.editor-styles-wrapper,
+body {
+	background: var(--ant-studio-color-f3f5f6) !important;
+	font-family: var(--ant-studio-font-family-roboto) !important;
+}
+
+/** WP Blocks Fix */
+.wp-site-blocks {
+	padding: 0 !important;
+}

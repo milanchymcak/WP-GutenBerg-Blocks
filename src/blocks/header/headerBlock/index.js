@@ -1,5 +1,6 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
+import IconBars from '../../../svg/IconBars';
 
 /**
  *
@@ -37,6 +38,9 @@ registerBlockType( metadata.name, {
 					className: 'header-block',
 				} ) }
 			>
+				<div className="header-mobile-menu">
+					<IconBars />
+				</div>
 				<InnerBlocks
 					template={ mainTemplate }
 					allowedBlocks={ allowedBlocks }
@@ -53,7 +57,7 @@ registerBlockType( metadata.name, {
 			>
 				<div className="header-block-container">
 					<div className="header-mobile-menu">
-						<i className="fa fa-bars" aria-hidden="true"></i>
+						<IconBars />
 					</div>
 					<InnerBlocks.Content />
 				</div>

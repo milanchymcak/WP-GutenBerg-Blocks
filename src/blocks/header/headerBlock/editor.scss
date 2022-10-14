@@ -1,7 +1,7 @@
 
 .header-block {
-	display: block;
-	max-width: 1140px;
+	margin: 10px auto 35px !important;
+	max-width: var(--ant-studio-site-max-width);
 	width: 100%;
 	height: 150px;
 	margin: 0 auto;

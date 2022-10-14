@@ -9,6 +9,7 @@ import {
 } from '@wordpress/block-editor';
 import { PanelBody, RangeControl, SelectControl } from '@wordpress/components';
 import Divider from '../../../components/Divider';
+import IconArrowRight from '../../../svg/IconArrowRight';
 
 /**
  *
@@ -18,7 +19,6 @@ import Divider from '../../../components/Divider';
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './editor.scss';
 import './style.scss';
 
 /**
@@ -250,18 +250,17 @@ registerBlockType( metadata.name, {
 								setAttributes( { title: val } );
 							} }
 						/>
-						<RichText
-							tagName="a"
-							href={ attributes.archive_link }
-							allowedFormats={ [] }
-							value={
-								attributes.archive_text +
-								'<i class="fa fa-long-arrow-right" aria-hidden="true"></i>'
-							}
-							onChange={ ( val ) => {
-								setAttributes( { archive_text: val } );
-							} }
-						/>
+						<a href={ attributes.archive_link }>
+							<RichText
+								tagName="span"
+								allowedFormats={ [] }
+								value={ attributes.archive_text }
+								onChange={ ( val ) => {
+									setAttributes( { archive_text: val } );
+								} }
+							/>
+							<IconArrowRight />
+						</a>
 					</div>
 					<div className="newest-items">
 						{ Object.values( attributes.posts ).map( ( key ) => {
@@ -329,10 +328,7 @@ registerBlockType( metadata.name, {
 											title={ key.title.rendered }
 										>
 											Přečíst Více
-											<i
-												className="fa fa-long-arrow-right"
-												aria-hidden="true"
-											></i>
+											<IconArrowRight />
 										</a>
 									</div>
 								</div>
@@ -352,14 +348,13 @@ registerBlockType( metadata.name, {
 			>
 				<div className="newest-header">
 					<RichText.Content tagName="h2" value={ attributes.title } />
-					<RichText.Content
-						tagName="a"
-						href={ attributes.archive_link }
-						value={
-							attributes.archive_text +
-							'<i class="fa fa-long-arrow-right" aria-hidden="true"></i>'
-						}
-					/>
+					<a href={ attributes.archive_link }>
+						<RichText.Content
+							tagName="span"
+							value={ attributes.archive_text }
+						/>
+						<IconArrowRight />
+					</a>
 				</div>
 				<div className="newest-items">
 					{ Object.values( attributes.posts ).map( ( key ) => {
@@ -425,10 +420,7 @@ registerBlockType( metadata.name, {
 										title={ key.title.rendered }
 									>
 										Přečíst Více
-										<i
-											className="fa fa-long-arrow-right"
-											aria-hidden="true"
-										></i>
+										<IconArrowRight />
 									</a>
 								</div>
 							</div>

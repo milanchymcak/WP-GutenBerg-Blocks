@@ -4,6 +4,7 @@ import {
 	BlockControls,
 	RichText,
 } from '@wordpress/block-editor';
+import IconArrowRight from '../../../svg/IconArrowRight';
 
 /**
  *
@@ -130,17 +131,18 @@ registerBlockType( metadata.name, {
 									Odesláním zprávy beru na vědomí zpracování
 									osobních údajů.
 								</div>
-								<RichText
-									tagName="button"
-									allowedFormats={ [] }
-									value={
-										attributes.form_send +
-										'<i class="fa fa-long-arrow-right" aria-hidden="true"></i>'
-									}
-									onChange={ ( val ) => {
-										setAttributes( { form_send: val } );
-									} }
-								/>
+								<button className="g-recaptcha">
+									<RichText
+										allowedFormats={ [] }
+										value={
+											attributes.form_send
+										}
+										onChange={ ( val ) => {
+											setAttributes( { form_send: val } );
+										} }
+									/>
+									<IconArrowRight />
+								</button>
 							</div>
 						</form>
 					</div>
@@ -233,19 +235,14 @@ registerBlockType( metadata.name, {
 									Odesláním zprávy beru na vědomí zpracování
 									osobních údajů.
 								</div>
-								<RichText.Content
-									tagName="button"
-									className="g-recaptcha"
-									value={
-										attributes.form_send +
-										'<i class="fa fa-long-arrow-right" aria-hidden="true"></i>'
-									}
-								/>
+								<button className="g-recaptcha">
+									{ attributes.form_send }
+									<IconArrowRight />
+								</button>
 							</div>
 						</form>
 					</div>
 				</div>
-				<script src="https://www.google.com/recaptcha/api.js?render=6LdwMnYiAAAAANcMWs9cI_h9V5wqM6xD178DL5lk"></script>
 			</>
 		);
 	},

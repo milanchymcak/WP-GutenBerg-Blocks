@@ -8,6 +8,8 @@ import {
 	RichText,
 } from '@wordpress/block-editor';
 import NewColorPalette from '../../../components/NewColorPalette';
+import IconArrowRight from '../../../svg/IconArrowRight';
+import IconCircleInfo from '../../../svg/IconCircleInfo';
 
 /**
  * Internal Data
@@ -78,30 +80,26 @@ registerBlockType( metadata.name, {
 								setAttributes( { title: val } );
 							} }
 						/>
-						<i
-							title={ attributes.login_title_info }
-							className="fa fa-info-circle"
-							aria-hidden="true"
-						></i>
+						<IconCircleInfo title={ attributes.login_title_info } />
 					</div>
-
 					<div className="header-login-link-wrap">
-						<RichText
-							tagName="a"
+						<a
 							className="header-login-link"
 							href={ attributes.href }
-							allowedFormats={ [] }
-							value={
-								attributes.link_text +
-								'<i className="fa fa-long-arrow-right" aria-hidden="true"></i>'
-							}
-							onChange={ ( val ) => {
-								setAttributes( { link_text: val } );
-							} }
 							style={ {
 								color: attributes.text_Color,
 							} }
-						/>
+						>
+							<RichText
+								tagName="span"
+								allowedFormats={ [] }
+								value={ attributes.link_text }
+								onChange={ ( val ) => {
+									setAttributes( { link_text: val } );
+								} }
+							/>
+							<IconArrowRight />
+						</a>
 					</div>
 				</div>
 			</>
@@ -120,11 +118,7 @@ registerBlockType( metadata.name, {
 						tagName="span"
 						value={ attributes.title }
 					/>
-					<i
-						title={ attributes.login_title_info }
-						className="fa fa-info-circle"
-						aria-hidden="true"
-					></i>
+					<IconCircleInfo title={ attributes.login_title_info } />
 				</div>
 				<div className="header-login-link-wrap">
 					<a
@@ -134,12 +128,8 @@ registerBlockType( metadata.name, {
 							color: attributes.text_Color,
 						} }
 					>
-						<RichText.Content
-							value={
-								attributes.link_text +
-								'<i className="fa fa-long-arrow-right" aria-hidden="true"></i>'
-							}
-						/>
+						<RichText.Content value={ attributes.link_text } />
+						<IconArrowRight />
 					</a>
 				</div>
 			</div>

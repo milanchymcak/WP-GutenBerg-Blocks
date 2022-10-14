@@ -15,7 +15,7 @@
         "type": "string",
         "selector": "a",
         "attribute": "value",
-        "default": "Vstoupit →"
+        "default": "Vstoupit"
     },
     "title": {
         "type": "string",

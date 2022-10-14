@@ -4,6 +4,7 @@ import {
 	BlockControls,
 	RichText,
 } from '@wordpress/block-editor';
+import IconArrowRight from '../../../svg/IconArrowRight';
 
 /**
  * Internal Data
@@ -20,17 +21,17 @@ registerBlockType( metadata.name, {
 			<>
 				<BlockControls group="block" />
 				<div { ...useBlockProps( { className: 'slider-info' } ) }>
-					<RichText
-						tagName="div"
-						allowedFormats={ [] }
-						value={
-							attributes.info
-						}
-						className="slider-info-inner"
-						onChange={ ( val ) => {
-							setAttributes( { info: val } );
-						} }
-					/>
+					<div className="slider-info-inner">
+						<IconArrowRight />
+						<RichText
+							tagName="span"
+							allowedFormats={ [] }
+							value={ attributes.info }
+							onChange={ ( val ) => {
+								setAttributes( { info: val } );
+							} }
+						/>
+					</div>
 				</div>
 			</>
 		);
@@ -38,14 +39,13 @@ registerBlockType( metadata.name, {
 	save: ( { attributes } ) => {
 		return (
 			<div { ...useBlockProps.save( { className: 'slider-info' } ) }>
-				<RichText.Content
-					tagName="div"
-					className="slider-info-inner"
-					value={
-						'<i class="fa fa-long-arrow-right" aria-hidden="true"></i>' +
-						attributes.info
-					}
-				/>
+				<div className="slider-info-inner">
+					<IconArrowRight />
+					<RichText.Content
+						tagName="span"
+						value={ attributes.info }
+					/>
+				</div>
 			</div>
 		);
 	},

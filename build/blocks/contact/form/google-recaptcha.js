@@ -1,0 +1,1 @@
+!function(){if(null==document.querySelector("#recaptcha-script")){const c=document.createElement("script");c.id="recaptcha-script",c.src="https://www.google.com/recaptcha/api.js?render=6LdwMnYiAAAAANcMWs9cI_h9V5wqM6xD178DL5lk",document.head.append(c)}}();
