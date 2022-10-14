@@ -92,7 +92,7 @@ body {
 	font-family: var(--ant-studio-font-family-roboto) !important;
 }
 
-/** WP Blocks Fix */
+/** WP Blocks Fix For Test Project */
 .wp-site-blocks {
 	padding: 0 !important;
 }
