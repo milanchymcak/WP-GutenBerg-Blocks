@@ -96,3 +96,7 @@ body {
 .wp-site-blocks {
 	padding: 0 !important;
 }
+footer {
+    margin-top: 50px !important;
+	padding-bottom: 25px;
+}
