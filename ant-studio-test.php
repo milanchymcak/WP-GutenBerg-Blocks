@@ -49,14 +49,6 @@ add_action(
 	'after_setup_theme', 
 	function () {
 		add_editor_style(ANT_URI .'public/assets/css/global.css');
-
-		/**
-		 * 
-		 * Add Development Compability
-		 * See https://github.com/WordPress/gutenberg/issues/44951
-		 * 
-		 */
-		// add_editor_style( 'https://milanchymcak.mravenec.eu/wp-content/plugins/ant-studio-test/public/assets/css/global.css' );
 	}
 );
 
