@@ -1,1 +1,24 @@
-.contact-form-container .contact-form #contact .rich-text{background:transparent;border:none;border-bottom:1px solid var(--ant-studio-color-ffffff);color:var(--ant-studio-color-ffffff);letter-spacing:.15px;margin-bottom:10px;opacity:1;opacity:.6;outline:0;padding-bottom:9px;width:100%}.contact-form-container .contact-form #contact .g-recaptcha .rich-text{border-bottom:none!important;margin-bottom:0;opacity:1;padding-bottom:0}
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/contact/form/editor.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+.contact-form-container .contact-form #contact .rich-text {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--ant-studio-color-ffffff);
+  width: 100%;
+  padding-bottom: 9px;
+  margin-bottom: 10px;
+  letter-spacing: 0.15px;
+  color: var(--ant-studio-color-ffffff);
+  opacity: 1;
+  outline: 0;
+  opacity: 0.6;
+}
+.contact-form-container .contact-form #contact .g-recaptcha .rich-text {
+  border-bottom: none !important;
+  opacity: 1;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+/*# sourceMappingURL=index.css.map*/

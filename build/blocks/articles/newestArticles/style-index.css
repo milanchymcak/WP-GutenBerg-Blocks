@@ -1,1 +1,133 @@
-.newest-articles{margin:0 auto 25px;max-width:var(--ant-studio-site-max-width);padding:25px 0 0}.newest-articles .newest-header{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-between}.newest-articles .newest-header h2{color:var(--ant-studio-color-414755);font-family:var(--ant-studio-font-family-din-2014);font-size:var(--ant-studio-font-size-28);font-weight:var(--ant-studio-font-weight-normal);padding-left:5px}@media only screen and (max-width:768px){.newest-articles .newest-header h2{margin-bottom:10px;width:100%}}.newest-articles .newest-header a{color:var(--ant-studio-color-af0b2b);font-size:var(--ant-studio-font-size-15);font-weight:var(--ant-studio-font-weight-normal);letter-spacing:var(--ant-studio-character-spacing-0-15);text-decoration:none}.newest-articles .newest-header a svg path{fill:var(--ant-studio-color-af0b2b)}.newest-articles .newest-header a:hover{color:var(--ant-studio-color-74081d)!important}.newest-articles .newest-header a:hover svg path{fill:var(--ant-studio-color-74081d)}@media only screen and (max-width:768px){.newest-articles .newest-header a{margin-bottom:25px;padding-left:10px;width:100%}}.newest-articles .newest-items{display:flex;flex-wrap:wrap}.newest-articles .newest-items .newest-item{background:var(--ant-studio-color-ffffff);border-left:5px solid var(--ant-studio-color-f3f5f6);border-right:5px solid var(--ant-studio-color-f3f5f6);margin-bottom:15px;padding:15px;width:25%}.newest-articles .newest-items .newest-item .newest-tags{margin-bottom:15px}.newest-articles .newest-items .newest-item .newest-tags a{background:var(--ant-studio-color-f3f5f6) 0 0 no-repeat padding-box;border-radius:16px;color:var(--ant-studio-color-68707c);display:inline-block;font-size:var(--ant-studio-font-size-15);letter-spacing:var(--ant-studio-character-spacing-0-15);margin:0 10px 10px 0;padding:5px 15px;text-decoration:none}.newest-articles .newest-items .newest-item .newest-category a{color:var(--ant-studio-color-af0b2b);font-size:var(--ant-studio-font-size-15);text-decoration:none}.newest-articles .newest-items .newest-item .newest-category a:hover{color:var(--ant-studio-color-74081d)!important}.newest-articles .newest-items .newest-item .newest-date{color:var(--ant-studio-color-8c97a8);font-size:var(--ant-studio-font-size-15);letter-spacing:var(--ant-studio-character-spacing-0-15)}.newest-articles .newest-items .newest-item .newest-title{color:var(--ant-studio-color-414755);font-size:var(--ant-studio-font-size-22);font-weight:var(--ant-studio-font-weight-bold);overflow:hidden}.newest-articles .newest-items .newest-item .newest-excerpt{color:var(--ant-studio-color-68707c);font-size:var(--ant-studio-font-size-15);letter-spacing:var(--ant-studio-character-spacing-0-15);overflow:hidden}.newest-articles .newest-items .newest-item .newest-link a{color:var(--ant-studio-color-af0b2b);font-size:var(--ant-studio-font-size-15);letter-spacing:var(--ant-studio-character-spacing-0-15);text-decoration:none}.newest-articles .newest-items .newest-item .newest-link a svg path{fill:var(--ant-studio-color-af0b2b)}.newest-articles .newest-items .newest-item .newest-link a:hover{color:var(--ant-studio-color-74081d)!important}.newest-articles .newest-items .newest-item .newest-link a:hover svg path{fill:var(--ant-studio-color-74081d)}@media only screen and (max-width:980px){.newest-articles .newest-items .newest-item{width:33.3333333%}}@media only screen and (max-width:768px){.newest-articles .newest-items .newest-item{width:50%}}@media only screen and (max-width:600px){.newest-articles .newest-items .newest-item{width:100%}}
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/articles/newestArticles/style.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+.newest-articles {
+  max-width: var(--ant-studio-site-max-width);
+  margin: 0 auto 25px;
+  padding: 25px 0 0;
+}
+.newest-articles .newest-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.newest-articles .newest-header h2 {
+  font-size: var(--ant-studio-font-size-28);
+  font-weight: var(--ant-studio-font-weight-normal);
+  font-family: var(--ant-studio-font-family-din-2014);
+  color: var(--ant-studio-color-414755);
+  padding-left: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .newest-articles .newest-header h2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.newest-articles .newest-header a {
+  letter-spacing: var(--ant-studio-character-spacing-0-15);
+  color: var(--ant-studio-color-af0b2b);
+  font-weight: var(--ant-studio-font-weight-normal);
+  text-decoration: none;
+  font-size: var(--ant-studio-font-size-15);
+}
+.newest-articles .newest-header a svg path {
+  fill: var(--ant-studio-color-af0b2b);
+}
+.newest-articles .newest-header a:hover {
+  color: var(--ant-studio-color-74081d) !important;
+}
+.newest-articles .newest-header a:hover svg path {
+  fill: var(--ant-studio-color-74081d);
+}
+@media only screen and (max-width: 768px) {
+  .newest-articles .newest-header a {
+    width: 100%;
+    margin-bottom: 25px;
+    padding-left: 10px;
+  }
+}
+.newest-articles .newest-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.newest-articles .newest-items .newest-item {
+  width: 25%;
+  background: var(--ant-studio-color-ffffff);
+  border-left: 5px solid var(--ant-studio-color-f3f5f6);
+  border-right: 5px solid var(--ant-studio-color-f3f5f6);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.newest-articles .newest-items .newest-item .newest-tags {
+  margin-bottom: 15px;
+}
+.newest-articles .newest-items .newest-item .newest-tags a {
+  background: var(--ant-studio-color-f3f5f6) 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  padding: 5px 15px;
+  text-decoration: none;
+  letter-spacing: var(--ant-studio-character-spacing-0-15);
+  color: var(--ant-studio-color-68707c);
+  font-size: var(--ant-studio-font-size-15);
+  margin: 0 10px 10px 0;
+  display: inline-block;
+}
+.newest-articles .newest-items .newest-item .newest-category a {
+  text-decoration: none;
+  color: var(--ant-studio-color-af0b2b);
+  font-size: var(--ant-studio-font-size-15);
+}
+.newest-articles .newest-items .newest-item .newest-category a:hover {
+  color: var(--ant-studio-color-74081d) !important;
+}
+.newest-articles .newest-items .newest-item .newest-date {
+  color: var(--ant-studio-color-8c97a8);
+  font-size: var(--ant-studio-font-size-15);
+  letter-spacing: var(--ant-studio-character-spacing-0-15);
+}
+.newest-articles .newest-items .newest-item .newest-title {
+  font-size: var(--ant-studio-font-size-22);
+  overflow: hidden;
+  font-weight: var(--ant-studio-font-weight-bold);
+  color: var(--ant-studio-color-414755);
+}
+.newest-articles .newest-items .newest-item .newest-excerpt {
+  font-size: var(--ant-studio-font-size-15);
+  letter-spacing: var(--ant-studio-character-spacing-0-15);
+  color: var(--ant-studio-color-68707c);
+  overflow: hidden;
+}
+.newest-articles .newest-items .newest-item .newest-link a {
+  text-decoration: none;
+  color: var(--ant-studio-color-af0b2b);
+  font-size: var(--ant-studio-font-size-15);
+  letter-spacing: var(--ant-studio-character-spacing-0-15);
+}
+.newest-articles .newest-items .newest-item .newest-link a svg path {
+  fill: var(--ant-studio-color-af0b2b);
+}
+.newest-articles .newest-items .newest-item .newest-link a:hover {
+  color: var(--ant-studio-color-74081d) !important;
+}
+.newest-articles .newest-items .newest-item .newest-link a:hover svg path {
+  fill: var(--ant-studio-color-74081d);
+}
+@media only screen and (max-width: 980px) {
+  .newest-articles .newest-items .newest-item {
+    width: 33.3333333%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .newest-articles .newest-items .newest-item {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .newest-articles .newest-items .newest-item {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

@@ -1,0 +1,48 @@
+{
+    "posts": {
+        "type": "array",
+        "default": {}
+    },
+    "all_categories": {
+        "type": "object",
+        "default": {}
+    },
+    "categories": {
+        "type": "object",
+        "default": {}
+    },
+    "tags": {
+        "type": "object",
+        "default": {}
+    },
+    "all_tags": {
+        "type": "object",
+        "default": {}
+    },
+    "title": {
+        "type": "string",
+        "selector": "h2",
+        "attribute": "value",
+        "default": "Události, akce, novinky z oboru"
+    },
+    "max_articles": {
+        "type": "integer",
+        "attribute": "value",
+        "default": 4
+    },
+    "order": {
+        "type": "string",
+        "attribute": "value",
+        "default": "desc"
+    },
+    "archive_link": {
+        "type": "string",
+        "attribute": "text",
+        "default": ""
+    },
+    "archive_text": {
+        "type": "string",
+        "attribute": "value",
+        "default": "Aktuality"
+    }
+}

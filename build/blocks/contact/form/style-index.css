@@ -1,1 +1,119 @@
-.contact-form-container{margin:0 auto 25px;max-width:var(--ant-studio-site-max-width);padding:25px 0 0}.contact-form-container .contact-form{background:var(--ant-studio-color-af0b2b) 0 0 no-repeat padding-box;margin:0 auto;max-width:380px;padding:20px 20px 0}.contact-form-container .contact-form .contact-message{background:var(--ant-studio-color-ffffff);border-radius:4px;font-size:var(--ant-studio-font-size-15);margin-bottom:15px;padding:5px;text-align:center}.contact-form-container .contact-form .mini_title{color:var(--ant-studio-color-ffffff);font-size:var(--ant-studio-font-size-15);font-weight:400;letter-spacing:var(--ant-studio-character-spacing-0-15)}.contact-form-container .contact-form .title-container{margin:10px 0}.contact-form-container .contact-form .title{font-weight:var(--ant-studio-font-weight-bold);letter-spacing:0;padding-bottom:5px}.contact-form-container .contact-form .sub-title,.contact-form-container .contact-form .title{color:var(--ant-studio-color-ffffff);font-family:var(--ant-studio-font-family-din-2014);font-size:var(--ant-studio-font-size-28);line-height:1;text-transform:uppercase}.contact-form-container .contact-form .sub-title{font-weight:var(--ant-studio-font-weight-normal)}.contact-form-container .contact-form .description{color:var(--ant-studio-color-ffffff);font-size:var(--ant-studio-font-size-15);letter-spacing:var(--ant-studio-character-spacing-0-15);opacity:.8}.contact-form-container .contact-form #contact{margin:10px 0}.contact-form-container .contact-form #contact input,.contact-form-container .contact-form #contact textarea{background:transparent;border:none;border-bottom:1px solid var(--ant-studio-color-ffffff);color:var(--ant-studio-color-ffffff);letter-spacing:var(--ant-studio-character-spacing-0-15);margin-bottom:10px;opacity:1;outline:0;padding-bottom:9px;width:100%}.contact-form-container .contact-form #contact input::-moz-placeholder,.contact-form-container .contact-form #contact textarea::-moz-placeholder{color:var(--ant-studio-color-ffffff);opacity:.6}.contact-form-container .contact-form #contact input::placeholder,.contact-form-container .contact-form #contact textarea::placeholder{color:var(--ant-studio-color-ffffff);opacity:.6}.contact-form-container .contact-form #contact .end-form{align-items:flex-end;display:flex}.contact-form-container .contact-form #contact .end-form .disclaimer{color:var(--ant-studio-color-ffffff);font:normal normal normal 13px/16px Roboto;letter-spacing:.13px;line-height:140%;opacity:.8;padding:15px 0}.contact-form-container .contact-form #contact .end-form .disclaimer a{color:var(--ant-studio-color-ffffff)}.contact-form-container .contact-form #contact .end-form button{align-items:center;background:transparent;border:none;color:var(--ant-studio-color-ffffff);cursor:pointer;display:flex;font-size:var(--ant-studio-font-size-18);font-weight:var(--ant-studio-font-weight-normal);letter-spacing:var(--ant-studio-character-spacing-0-15);margin-right:-20px;padding:18px}.contact-form-container .contact-form #contact .end-form button svg{margin-left:5px}.contact-form-container .contact-form #contact .end-form button svg path{fill:var(--ant-studio-color-ffffff)}.contact-form-container .contact-form #contact .end-form button:hover{background:var(--ant-studio-color-74081d) 0 0 no-repeat padding-box}
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/contact/form/style.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+.contact-form-container {
+  max-width: var(--ant-studio-site-max-width);
+  margin: 0 auto 25px;
+  padding: 25px 0 0;
+}
+.contact-form-container .contact-form {
+  max-width: 380px;
+  margin: 0 auto;
+  background: var(--ant-studio-color-af0b2b) 0% 0% no-repeat padding-box;
+  padding: 20px 20px 0;
+}
+.contact-form-container .contact-form .contact-message {
+  font-size: var(--ant-studio-font-size-15);
+  text-align: center;
+  background: var(--ant-studio-color-ffffff);
+  border-radius: 4px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+.contact-form-container .contact-form .mini_title {
+  font-size: var(--ant-studio-font-size-15);
+  font-weight: 400;
+  letter-spacing: var(--ant-studio-character-spacing-0-15);
+  color: var(--ant-studio-color-ffffff);
+}
+.contact-form-container .contact-form .title-container {
+  margin: 10px 0;
+}
+.contact-form-container .contact-form .title {
+  letter-spacing: 0;
+  color: var(--ant-studio-color-ffffff);
+  font-size: var(--ant-studio-font-size-28);
+  font-weight: var(--ant-studio-font-weight-bold);
+  font-family: var(--ant-studio-font-family-din-2014);
+  text-transform: uppercase;
+  line-height: 1;
+  padding-bottom: 5px;
+}
+.contact-form-container .contact-form .sub-title {
+  color: var(--ant-studio-color-ffffff);
+  font-size: var(--ant-studio-font-size-28);
+  font-weight: var(--ant-studio-font-weight-normal);
+  font-family: var(--ant-studio-font-family-din-2014);
+  text-transform: uppercase;
+  line-height: 1;
+}
+.contact-form-container .contact-form .description {
+  letter-spacing: var(--ant-studio-character-spacing-0-15);
+  font-size: var(--ant-studio-font-size-15);
+  color: var(--ant-studio-color-ffffff);
+  opacity: 0.8;
+}
+.contact-form-container .contact-form #contact {
+  margin: 10px 0;
+}
+.contact-form-container .contact-form #contact input,
+.contact-form-container .contact-form #contact textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--ant-studio-color-ffffff);
+  width: 100%;
+  padding-bottom: 9px;
+  margin-bottom: 10px;
+  letter-spacing: var(--ant-studio-character-spacing-0-15);
+  color: var(--ant-studio-color-ffffff);
+  opacity: 1;
+  outline: 0;
+}
+.contact-form-container .contact-form #contact input::-moz-placeholder, .contact-form-container .contact-form #contact textarea::-moz-placeholder {
+  opacity: 0.6;
+  color: var(--ant-studio-color-ffffff);
+}
+.contact-form-container .contact-form #contact input::placeholder,
+.contact-form-container .contact-form #contact textarea::placeholder {
+  opacity: 0.6;
+  color: var(--ant-studio-color-ffffff);
+}
+.contact-form-container .contact-form #contact .end-form {
+  display: flex;
+  align-items: flex-end;
+}
+.contact-form-container .contact-form #contact .end-form .disclaimer {
+  font: normal normal normal 13px/16px Roboto;
+  letter-spacing: 0.13px;
+  color: var(--ant-studio-color-ffffff);
+  opacity: 0.8;
+  padding: 15px 0 15px;
+  line-height: 140%;
+}
+.contact-form-container .contact-form #contact .end-form .disclaimer a {
+  color: var(--ant-studio-color-ffffff);
+}
+.contact-form-container .contact-form #contact .end-form button {
+  margin-right: -20px;
+  border: none;
+  background: transparent;
+  font-weight: var(--ant-studio-font-weight-normal);
+  font-size: var(--ant-studio-font-size-18);
+  letter-spacing: var(--ant-studio-character-spacing-0-15);
+  color: var(--ant-studio-color-ffffff);
+  padding: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.contact-form-container .contact-form #contact .end-form button svg {
+  margin-left: 5px;
+}
+.contact-form-container .contact-form #contact .end-form button svg path {
+  fill: var(--ant-studio-color-ffffff);
+}
+.contact-form-container .contact-form #contact .end-form button:hover {
+  background: var(--ant-studio-color-74081d) 0% 0% no-repeat padding-box;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

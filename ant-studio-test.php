@@ -110,6 +110,44 @@ add_action(
 	'init', 
 	function () {
 		foreach (glob( __DIR__  . '/build/blocks/*/*/' ) as $block_type) {
+
+			/**
+			 * Dynamic Blocks
+			 */
+			if(str_contains($block_type, 'newestArticles')) {
+
+				/**
+				 * Get Default Values From Attributes.json
+				 * 
+				 * By Default Gutenberg shows default values only on client side thus there attributes are not available on the server rendering through render_callback
+				 * By modifying webpack config we can build our attributes.json which we can extract values from
+				 */
+				$default_attributes = json_decode( file_get_contents( $block_type . 'attributes.json' ), true );
+
+				/** 
+				 * Register Block Type 
+				 * Dynamic Block
+				 */
+				register_block_type($block_type, [
+					'attributes' => $default_attributes, 
+					'render_callback' => function ($attributes, $content, $block) use ($block_type) {
+						if(file_exists($block_type . 'render.php')) {
+							/**
+							 * Simulating ...useBlockProps.save() with the class name
+							 */
+							$block_content = '<div class="wp-block-' . str_replace('/', '-',$block->parsed_block['blockName']) . ' newest-articles">';
+							$block_content .= include ($block_type . 'render.php');
+							$block_content .= '</div>';
+							return $block_content;
+						}
+					}
+				]);
+				continue;
+			}
+
+			/**
+			 * Static Blocks
+			 */
 			register_block_type($block_type);
 		}
 	}

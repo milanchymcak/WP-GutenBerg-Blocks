@@ -31,10 +31,26 @@ registerBlockType( metadata.name, {
 	attributes: getAttributes,
 	edit: ( props ) => {
 		const { attributes, setAttributes } = props;
+
+		/**
+		 * Resave all default values for PHP rendering 
+		 */
+
+		useEffect( () => {
+			Object.keys(attributes).forEach(attributeKey => setAttributes( { [attributeKey]: attributes[attributeKey] }))
+			console.log(attributes);
+
+			for(const attributeKey of Object.keys(attributes)) {
+				setAttributes( {[attributeKey]: attributes[attributeKey] })
+				
+			}
+
+
+		}, [attributes])
+
 		/**
 		 * Site Main Information
 		 *
-		 * WP 6.1 Should implement better method to get site data
 		 */
 
 		/**
@@ -69,6 +85,7 @@ registerBlockType( metadata.name, {
 		}, [] );
 
 		useEffect( () => {
+
 			/**
 			 * Save Posts
 			 */
@@ -339,95 +356,95 @@ registerBlockType( metadata.name, {
 			</>
 		);
 	},
-	save: ( { attributes } ) => {
-		return (
-			<div
-				{ ...useBlockProps.save( {
-					className: 'newest-articles',
-				} ) }
-			>
-				<div className="newest-header">
-					<RichText.Content tagName="h2" value={ attributes.title } />
-					<a href={ attributes.archive_link }>
-						<RichText.Content
-							tagName="span"
-							value={ attributes.archive_text }
-						/>
-						<IconArrowRight />
-					</a>
-				</div>
-				<div className="newest-items">
-					{ Object.values( attributes.posts ).map( ( key ) => {
-						const postCategories = key.categories;
-						const postTags = key.tags;
-						return (
-							<div
-								className="newest-item"
-								key={ key.title.rendered }
-							>
-								<div className="newest-category">
-									{ Object.values(
-										attributes.all_categories
-									).map( ( key, index ) => {
-										if (
-											postCategories &&
-											postCategories.includes( key.id )
-										) {
-											return (
-												<a
-													href={ key.link }
-													key={ key.name }
-												>
-													{ key.name }
-												</a>
-											);
-										}
-									} ) }
-								</div>
-								<div className="newest-date">
-									{ key.date.replace( 'T', ' ' ) }
-								</div>
-								<div className="newest-title">
-									{ key.title.rendered }
-								</div>
-								<RichText.Content
-									tagName="div"
-									value={ key.excerpt.rendered }
-									className="newest-excerpt"
-								/>
-								<div className="newest-tags">
-									{ Object.values( attributes.all_tags ).map(
-										( key, index ) => {
-											if (
-												postTags &&
-												postTags.includes( key.id )
-											) {
-												return (
-													<a
-														href={ key.link }
-														key={ key.name }
-													>
-														{ key.name }
-													</a>
-												);
-											}
-										}
-									) }
-								</div>
-								<div className="newest-link">
-									<a
-										href={ key.link }
-										title={ key.title.rendered }
-									>
-										Přečíst Více
-										<IconArrowRight />
-									</a>
-								</div>
-							</div>
-						);
-					} ) }
-				</div>
-			</div>
-		);
-	},
+	// save: ( { attributes } ) => {
+	// 	return (
+	// 		<div
+	// 			{ ...useBlockProps.save( {
+	// 				className: 'newest-articles',
+	// 			} ) }
+	// 		>
+	// 			<div className="newest-header">
+	// 				<RichText.Content tagName="h2" value={ attributes.title } />
+	// 				<a href={ attributes.archive_link }>
+	// 					<RichText.Content
+	// 						tagName="span"
+	// 						value={ attributes.archive_text }
+	// 					/>
+	// 					<IconArrowRight />
+	// 				</a>
+	// 			</div>
+	// 			<div className="newest-items">
+	// 				{ Object.values( attributes.posts ).map( ( key ) => {
+	// 					const postCategories = key.categories;
+	// 					const postTags = key.tags;
+	// 					return (
+	// 						<div
+	// 							className="newest-item"
+	// 							key={ key.title.rendered }
+	// 						>
+	// 							<div className="newest-category">
+	// 								{ Object.values(
+	// 									attributes.all_categories
+	// 								).map( ( key, index ) => {
+	// 									if (
+	// 										postCategories &&
+	// 										postCategories.includes( key.id )
+	// 									) {
+	// 										return (
+	// 											<a
+	// 												href={ key.link }
+	// 												key={ key.name }
+	// 											>
+	// 												{ key.name }
+	// 											</a>
+	// 										);
+	// 									}
+	// 								} ) }
+	// 							</div>
+	// 							<div className="newest-date">
+	// 								{ key.date.replace( 'T', ' ' ) }
+	// 							</div>
+	// 							<div className="newest-title">
+	// 								{ key.title.rendered }
+	// 							</div>
+	// 							<RichText.Content
+	// 								tagName="div"
+	// 								value={ key.excerpt.rendered }
+	// 								className="newest-excerpt"
+	// 							/>
+	// 							<div className="newest-tags">
+	// 								{ Object.values( attributes.all_tags ).map(
+	// 									( key, index ) => {
+	// 										if (
+	// 											postTags &&
+	// 											postTags.includes( key.id )
+	// 										) {
+	// 											return (
+	// 												<a
+	// 													href={ key.link }
+	// 													key={ key.name }
+	// 												>
+	// 													{ key.name }
+	// 												</a>
+	// 											);
+	// 										}
+	// 									}
+	// 								) }
+	// 							</div>
+	// 							<div className="newest-link">
+	// 								<a
+	// 									href={ key.link }
+	// 									title={ key.title.rendered }
+	// 								>
+	// 									Přečíst Více
+	// 									<IconArrowRight />
+	// 								</a>
+	// 							</div>
+	// 						</div>
+	// 					);
+	// 				} ) }
+	// 			</div>
+	// 		</div>
+	// 	);
+	// },
 } );

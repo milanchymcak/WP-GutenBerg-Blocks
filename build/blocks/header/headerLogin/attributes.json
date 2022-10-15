@@ -1,0 +1,38 @@
+{
+    "text_Color": {
+        "type": "string",
+        "selector": "a",
+        "attribute": "color",
+        "default": "#AF0B2B"
+    },
+    "href": {
+        "type": "string",
+        "selector": "a",
+        "attribute": "href",
+        "default": "#"
+    },
+    "link_text": {
+        "type": "string",
+        "selector": "a",
+        "attribute": "value",
+        "default": "Vstoupit"
+    },
+    "title": {
+        "type": "string",
+        "selector": "span",
+        "attribute": "value",
+        "default": "MOJE ALFA"
+    },
+    "sub_title": {
+        "type": "string",
+        "selector": "div",
+        "attribute": "value",
+        "default": "Zákaznická linka"
+    },
+    "login_title_info": {
+        "type": "string",
+        "selector": "i",
+        "attribute": "title",
+        "default": "Nějaké Informace"
+    }
+}
