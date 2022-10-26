@@ -2,8 +2,7 @@
 /**
  * SVG Icons
  */
-// $render_icon_arrow_right = file_get_contents(ANT_URI . 'public/assets/img/iconArrowRight.svg');
-$render_icon_arrow_right = file_get_contents('https://milanchymcak.mravenec.eu/wp-content/plugins/ant-studio-test/public/assets/img/iconArrowRight.svg');
+$render_icon_arrow_right = file_get_contents(ANT_URI . 'public/assets/img/iconArrowRight.svg');
 
 /**
  * Save Render Content
