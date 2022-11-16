@@ -1,2 +1,2 @@
-# Ant Studio Test
+# Gutenberg WordPress Test Project
 Test Project
