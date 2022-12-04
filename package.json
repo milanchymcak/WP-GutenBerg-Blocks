@@ -1,11 +1,11 @@
 {
-	"name": "ant-studio-test",
+	"name": "test-project",
 	"version": "1.0.0",
 	"description": "Test Project",
 	"author": "Milan Chymčák",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
-		"Ant Studio",
+		"Test Project",
 		"Test"
 	],
 	"homepage": "https://chymcakmilan.com",
@@ -13,7 +13,7 @@
 		"email": "contact@chymcakmilan.com"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "24.3.0"
+		"@wordpress/scripts": "^24.3.0"
 	},
 	"scripts": {
 		"build": "wp-scripts build --webpack-copy-php",

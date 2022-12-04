@@ -26,12 +26,12 @@ registerBlockType( metadata.name, {
 				<InspectorControls>
 					<PanelBody
 						initialOpen={ false }
-						title={ __( 'Nastavení Barev', 'ant-studio-example' ) }
+						title={ __( 'Nastavení Barev', 'text-domain-example' ) }
 					>
 						<NewColorPalette
 							attributes={ attributes }
 							setAttributes={ setAttributes }
-							label={ __( 'Barva Textu', 'ant-studio-example' ) }
+							label={ __( 'Barva Textu', 'text-domain-example' ) }
 							target="text_Color"
 							default={ attributes.text_Color }
 						/>
@@ -39,7 +39,7 @@ registerBlockType( metadata.name, {
 						<NewColorPalette
 							attributes={ attributes }
 							setAttributes={ setAttributes }
-							label={ __( 'Barva Pozadí', 'ant-studio-example' ) }
+							label={ __( 'Barva Pozadí', 'text-domain-example' ) }
 							target="bg_Color"
 							default={ attributes.bg_Color }
 						/>
@@ -47,7 +47,7 @@ registerBlockType( metadata.name, {
 						<NewColorPalette
 							attributes={ attributes }
 							setAttributes={ setAttributes }
-							label={ __( 'Barva Okrajů', 'ant-studio-example' ) }
+							label={ __( 'Barva Okrajů', 'text-domain-example' ) }
 							target="border_Color"
 							default={ attributes.border_Color }
 						/>
@@ -55,7 +55,7 @@ registerBlockType( metadata.name, {
 						<RangeControl
 							label={ __(
 								'Tlouštka Okrajů',
-								'ant-studio-example'
+								'text-domain-example'
 							) }
 							value={ attributes.border_Width }
 							onChange={ ( val ) =>
@@ -69,10 +69,10 @@ registerBlockType( metadata.name, {
 					</PanelBody>
 					<PanelBody
 						initialOpen={ false }
-						title={ __( 'Nastavení Odkazu', 'ant-studio-example' ) }
+						title={ __( 'Nastavení Odkazu', 'text-domain-example' ) }
 					>
 						<TextControl
-							label={ __( 'Odkaz Href', 'ant-studio-example' ) }
+							label={ __( 'Odkaz Href', 'text-domain-example' ) }
 							value={ attributes.href }
 							onChange={ ( val ) =>
 								setAttributes( { href: val } )

@@ -26,12 +26,12 @@ registerBlockType( metadata.name, {
 				<InspectorControls>
 					<PanelBody
 						initialOpen={ false }
-						title={ __( 'Nastavení Barev', 'ant-studio-example' ) }
+						title={ __( 'Nastavení Barev', 'text-domain-example' ) }
 					>
 						<NewColorPalette
 							attributes={ attributes }
 							setAttributes={ setAttributes }
-							label={ __( 'Barva Textu', 'ant-studio-example' ) }
+							label={ __( 'Barva Textu', 'text-domain-example' ) }
 							target="text_Color"
 							default={ attributes.text_Color }
 						/>
@@ -39,7 +39,7 @@ registerBlockType( metadata.name, {
 						<NewColorPalette
 							attributes={ attributes }
 							setAttributes={ setAttributes }
-							label={ __( 'Barva Pozadí', 'ant-studio-example' ) }
+							label={ __( 'Barva Pozadí', 'text-domain-example' ) }
 							target="bg_Color"
 							default={ attributes.bg_Color }
 						/>
@@ -47,7 +47,7 @@ registerBlockType( metadata.name, {
 						<NewColorPalette
 							attributes={ attributes }
 							setAttributes={ setAttributes }
-							label={ __( 'Barva Okrajů', 'ant-studio-example' ) }
+							label={ __( 'Barva Okrajů', 'text-domain-example' ) }
 							target="border_Color"
 							default={ attributes.border_Color }
 						/>
@@ -55,7 +55,7 @@ registerBlockType( metadata.name, {
 						<RangeControl
 							label={ __(
 								'Tlouštka Okrajů',
-								'ant-studio-example'
+								'text-domain-example'
 							) }
 							value={ attributes.border_Width }
 							onChange={ ( val ) =>
@@ -69,12 +69,12 @@ registerBlockType( metadata.name, {
 					</PanelBody>
 					<PanelBody
 						initialOpen={ false }
-						title={ __( 'Nastavení Odkazů', 'ant-studio-example' ) }
+						title={ __( 'Nastavení Odkazů', 'text-domain-example' ) }
 					>
 						<TextControl
 							label={ __(
 								'1. Slider - Odkaz',
-								'ant-studio-example'
+								'text-domain-example'
 							) }
 							value={ attributes.href_1 }
 							onChange={ ( val ) =>
@@ -85,7 +85,7 @@ registerBlockType( metadata.name, {
 						<TextControl
 							label={ __(
 								'2. Slider - Odkaz',
-								'ant-studio-example'
+								'text-domain-example'
 							) }
 							value={ attributes.href_2 }
 							onChange={ ( val ) =>
@@ -96,7 +96,7 @@ registerBlockType( metadata.name, {
 						<TextControl
 							label={ __(
 								'3. Slider - Odkaz',
-								'ant-studio-example'
+								'text-domain-example'
 							) }
 							value={ attributes.href_3 }
 							onChange={ ( val ) =>
@@ -107,7 +107,7 @@ registerBlockType( metadata.name, {
 						<TextControl
 							label={ __(
 								'4. Slider - Odkaz',
-								'ant-studio-example'
+								'text-domain-example'
 							) }
 							value={ attributes.href_4 }
 							onChange={ ( val ) =>

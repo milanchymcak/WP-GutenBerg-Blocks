@@ -7,14 +7,14 @@
 	font-family: "DIN 2014";
 	font-style: normal;
 	font-weight: 700;
-	src: url("https://milanchymcak.mravenec.eu/wp-content/plugins/ant-studio-test/public/assets/fonts/din2014-bold.woff") format("woff");
+	src: url("https://milanchymcak.mravenec.eu/wp-content/plugins/test-project/public/assets/fonts/din2014-bold.woff") format("woff");
 }
 
 @font-face {
 	font-family: "DIN 2014";
 	font-style: normal;
 	font-weight: 500;
-	src: url("https://milanchymcak.mravenec.eu/wp-content/plugins/ant-studio-test/public/assets/fonts/din2014-light.woff") format("woff");
+	src: url("https://milanchymcak.mravenec.eu/wp-content/plugins/test-project/public/assets/fonts/din2014-light.woff") format("woff");
 }
 
 /* latin-ext */
@@ -38,46 +38,46 @@
 :root {
 
 	/* Global */
-	--ant-studio-site-max-width: 1140px;
+	--test-site-max-width: 1140px;
 
 	/* Colors: */
-	--ant-studio-color-ffffff: #fff;
-	--ant-studio-color-d0d8dc: #d0d8dc;
-	--ant-studio-color-f3f5f6: #f3f5f6;
-	--ant-studio-color-8c97a8: #8c97a8;
-	--ant-studio-color-68707c: #68707c;
-	--ant-studio-color-414755: #414755;
-	--ant-studio-color-2c303a: #2c303a;
-	--ant-studio-color-af0b2b: #af0b2b;
-	--ant-studio-color-74081d: #74081d;
-	--ant-studio-color-af0a2b: #af0a2b;
+	--test-color-ffffff: #fff;
+	--test-color-d0d8dc: #d0d8dc;
+	--test-color-f3f5f6: #f3f5f6;
+	--test-color-8c97a8: #8c97a8;
+	--test-color-68707c: #68707c;
+	--test-color-414755: #414755;
+	--test-color-2c303a: #2c303a;
+	--test-color-af0b2b: #af0b2b;
+	--test-color-74081d: #74081d;
+	--test-color-af0a2b: #af0a2b;
 
 	/* Font/text values */
-	--ant-studio-font-family-roboto: "Roboto", sans-serif;
-	--ant-studio-font-family-din-2014: "DIN 2014", sans-serif;
-	--ant-studio-font-style-normal: normal;
-	--ant-studio-font-weight-300: 300;
-	--ant-studio-font-weight-normal: 500;
-	--ant-studio-font-weight-bold: 700;
-	--ant-studio-font-size-15: 15px;
-	--ant-studio-font-size-16: 16px;
-	--ant-studio-font-size-18: 18px;
-	--ant-studio-font-size-22: 22px;
-	--ant-studio-font-size-28: 28px;
-	--ant-studio-font-size-32: 32px;
-	--ant-studio-font-size-38: 38px;
-	--ant-studio-font-size-50: 50px;
-	--ant-studio-character-spacing-0: 0;
-	--ant-studio-character-spacing-0-15: 0.15px;
-	--ant-studio-line-spacing-18: 18px;
-	--ant-studio-line-spacing-20: 20px;
-	--ant-studio-line-spacing-25: 25px;
-	--ant-studio-line-spacing-27: 27px;
-	--ant-studio-line-spacing-31: 31px;
-	--ant-studio-line-spacing-35: 35px;
-	--ant-studio-line-spacing-42: 42px;
-	--ant-studio-line-spacing-55: 55px;
-	--ant-studio-decoration-underline: underline;
+	--test-font-family-roboto: "Roboto", sans-serif;
+	--test-font-family-din-2014: "DIN 2014", sans-serif;
+	--test-font-style-normal: normal;
+	--test-font-weight-300: 300;
+	--test-font-weight-normal: 500;
+	--test-font-weight-bold: 700;
+	--test-font-size-15: 15px;
+	--test-font-size-16: 16px;
+	--test-font-size-18: 18px;
+	--test-font-size-22: 22px;
+	--test-font-size-28: 28px;
+	--test-font-size-32: 32px;
+	--test-font-size-38: 38px;
+	--test-font-size-50: 50px;
+	--test-character-spacing-0: 0;
+	--test-character-spacing-0-15: 0.15px;
+	--test-line-spacing-18: 18px;
+	--test-line-spacing-20: 20px;
+	--test-line-spacing-25: 25px;
+	--test-line-spacing-27: 27px;
+	--test-line-spacing-31: 31px;
+	--test-line-spacing-35: 35px;
+	--test-line-spacing-42: 42px;
+	--test-line-spacing-55: 55px;
+	--test-decoration-underline: underline;
 }
 
 * {
@@ -88,8 +88,8 @@
 
 .editor-styles-wrapper,
 body {
-	background: var(--ant-studio-color-f3f5f6) !important;
-	font-family: var(--ant-studio-font-family-roboto) !important;
+	background: var(--test-color-f3f5f6) !important;
+	font-family: var(--test-font-family-roboto) !important;
 }
 
 /** WP Blocks Fix For Test Project */

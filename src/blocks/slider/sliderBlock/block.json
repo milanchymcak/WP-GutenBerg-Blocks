@@ -3,7 +3,7 @@
 	"apiVersion": 2,
 	"name": "mchymcak/sliderblock",
 	"version": "1.0",
-	"title": "Ant Studio - Slider Block",
+	"title": "Test Project - Slider Block",
 	"category": "theme",
 	"icon": "images-alt2",
 	"description": "Slider Block",
@@ -11,8 +11,8 @@
 		"html": false
 	},
 	"example": {},
-	"keywords": [ "slider", "ant studio" ],
-	"textdomain": "ant-studio-example",
+	"keywords": [ "slider", "Test Project" ],
+	"textdomain": "text-domain-example",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css"

@@ -216,10 +216,10 @@ registerBlockType( metadata.name, {
 				<InspectorControls>
 					<PanelBody
 						initialOpen={ true }
-						title={ __( 'Nastavení Článků', 'ant-studio-example' ) }
+						title={ __( 'Nastavení Článků', 'text-domain-example' ) }
 					>
 						<RangeControl
-							label={ __( 'Počet Článků', 'ant-studio-example' ) }
+							label={ __( 'Počet Článků', 'text-domain-example' ) }
 							value={ attributes.max_articles }
 							onChange={ ( val ) =>
 								setAttributes( { max_articles: val } )
@@ -232,7 +232,7 @@ registerBlockType( metadata.name, {
 						<SelectControl
 							label={ __(
 								'Seřazení Článků',
-								'ant-studio-example'
+								'text-domain-example'
 							) }
 							value={ attributes.order }
 							options={ [

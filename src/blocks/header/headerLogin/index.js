@@ -27,22 +27,22 @@ registerBlockType( metadata.name, {
 				<InspectorControls>
 					<PanelBody
 						initialOpen={ false }
-						title={ __( 'Nastavení Barev', 'ant-studio-example' ) }
+						title={ __( 'Nastavení Barev', 'text-domain-example' ) }
 					>
 						<NewColorPalette
 							attributes={ attributes }
 							setAttributes={ setAttributes }
-							label={ __( 'Barva Odkazu', 'ant-studio-example' ) }
+							label={ __( 'Barva Odkazu', 'text-domain-example' ) }
 							target="text_Color"
 							default={ attributes.text_Color }
 						/>
 					</PanelBody>
 					<PanelBody
 						initialOpen={ false }
-						title={ __( 'Nastavení', 'ant-studio-example' ) }
+						title={ __( 'Nastavení', 'text-domain-example' ) }
 					>
 						<TextControl
-							label={ __( 'Odkaz Href', 'ant-studio-example' ) }
+							label={ __( 'Odkaz Href', 'text-domain-example' ) }
 							value={ attributes.href }
 							onChange={ ( val ) =>
 								setAttributes( { href: val } )
@@ -51,7 +51,7 @@ registerBlockType( metadata.name, {
 						<TextControl
 							label={ __(
 								'Informace Tooltip',
-								'ant-studio-example'
+								'text-domain-example'
 							) }
 							value={ attributes.login_title_info }
 							onChange={ ( val ) =>

@@ -1,8 +1,0 @@
-{
-    "info": {
-        "type": "string",
-        "selector": "div",
-        "attribute": "value",
-        "default": "Default Text"
-    }
-}

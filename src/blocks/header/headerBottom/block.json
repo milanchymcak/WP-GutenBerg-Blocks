@@ -2,14 +2,14 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
 	"name": "mchymcak/headerbottom",
-	"title": "Ant Studio - Header - Spodní Část",
+	"title": "Test Project - Header - Spodní Část",
 	"category": "theme",
 	"icon": "admin-settings",
 	"description": "Header - Spodní Část",
 	"supports": {
 		"html": false
 	},
-	"textdomain": "ant-studio-example",
+	"textdomain": "text-domain-example",
 	"editorScript": "file:./index.js",
 	"parent": [ "mchymcak/headernav" ]
 }

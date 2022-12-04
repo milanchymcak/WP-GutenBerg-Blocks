@@ -1,28 +1,28 @@
 .contact-form-container {
-	max-width: var(--ant-studio-site-max-width);
+	max-width: var(--test-site-max-width);
 	margin: 0 auto 25px;
 	padding: 25px 0 0;
 
 	.contact-form {
 		max-width: 380px;
 		margin: 0 auto;
-		background: var(--ant-studio-color-af0b2b) 0% 0% no-repeat padding-box;
+		background: var(--test-color-af0b2b) 0% 0% no-repeat padding-box;
 		padding: 20px 20px 0;
 
 		.contact-message {
-			font-size: var(--ant-studio-font-size-15);
+			font-size: var(--test-font-size-15);
 			text-align: center;
-			background: var(--ant-studio-color-ffffff);
+			background: var(--test-color-ffffff);
 			border-radius: 4px;
 			margin-bottom: 15px;
 			padding: 5px;
 		}
 
 		.mini_title {
-			font-size: var(--ant-studio-font-size-15);
+			font-size: var(--test-font-size-15);
 			font-weight: 400;
-			letter-spacing: var(--ant-studio-character-spacing-0-15);
-			color: var(--ant-studio-color-ffffff);
+			letter-spacing: var(--test-character-spacing-0-15);
+			color: var(--test-color-ffffff);
 		}
 
 		.title-container {
@@ -31,28 +31,28 @@
 
 		.title {
 			letter-spacing: 0;
-			color: var(--ant-studio-color-ffffff);
-			font-size: var(--ant-studio-font-size-28);
-			font-weight: var(--ant-studio-font-weight-bold);
-			font-family: var(--ant-studio-font-family-din-2014);
+			color: var(--test-color-ffffff);
+			font-size: var(--test-font-size-28);
+			font-weight: var(--test-font-weight-bold);
+			font-family: var(--test-font-family-din-2014);
 			text-transform: uppercase;
 			line-height: 1;
 			padding-bottom: 5px;
 		}
 
 		.sub-title {
-			color: var(--ant-studio-color-ffffff);
-			font-size: var(--ant-studio-font-size-28);
-			font-weight: var(--ant-studio-font-weight-normal);
-			font-family: var(--ant-studio-font-family-din-2014);
+			color: var(--test-color-ffffff);
+			font-size: var(--test-font-size-28);
+			font-weight: var(--test-font-weight-normal);
+			font-family: var(--test-font-family-din-2014);
 			text-transform: uppercase;
 			line-height: 1;
 		}
 
 		.description {
-			letter-spacing: var(--ant-studio-character-spacing-0-15);
-			font-size: var(--ant-studio-font-size-15);
-			color: var(--ant-studio-color-ffffff);
+			letter-spacing: var(--test-character-spacing-0-15);
+			font-size: var(--test-font-size-15);
+			color: var(--test-color-ffffff);
 			opacity: 0.8;
 		}
 
@@ -63,12 +63,12 @@
 			textarea {
 				background: transparent;
 				border: none;
-				border-bottom: 1px solid var(--ant-studio-color-ffffff);
+				border-bottom: 1px solid var(--test-color-ffffff);
 				width: 100%;
 				padding-bottom: 9px;
 				margin-bottom: 10px;
-				letter-spacing: var(--ant-studio-character-spacing-0-15);
-				color: var(--ant-studio-color-ffffff);
+				letter-spacing: var(--test-character-spacing-0-15);
+				color: var(--test-color-ffffff);
 				opacity: 1;
 				outline: 0;
 			}
@@ -76,7 +76,7 @@
 			input::placeholder,
 			textarea::placeholder {
 				opacity: 0.6;
-				color: var(--ant-studio-color-ffffff);
+				color: var(--test-color-ffffff);
 			}
 
 			.end-form {
@@ -86,13 +86,13 @@
 				.disclaimer {
 					font: normal normal normal 13px/16px Roboto;
 					letter-spacing: 0.13px;
-					color: var(--ant-studio-color-ffffff);
+					color: var(--test-color-ffffff);
 					opacity: 0.8;
 					padding: 15px 0 15px;
 					line-height: 140%;
 
 					a {
-						color: var(--ant-studio-color-ffffff);
+						color: var(--test-color-ffffff);
 					}
 				}
 
@@ -100,10 +100,10 @@
 					margin-right: -20px;
 					border: none;
 					background: transparent;
-					font-weight: var(--ant-studio-font-weight-normal);
-					font-size: var(--ant-studio-font-size-18);
-					letter-spacing: var(--ant-studio-character-spacing-0-15);
-					color: var(--ant-studio-color-ffffff);
+					font-weight: var(--test-font-weight-normal);
+					font-size: var(--test-font-size-18);
+					letter-spacing: var(--test-character-spacing-0-15);
+					color: var(--test-color-ffffff);
 					padding: 18px;
 					cursor: pointer;
 					display: flex;
@@ -113,12 +113,12 @@
 						margin-left: 5px;
 
 						path {
-							fill: var(--ant-studio-color-ffffff);
+							fill: var(--test-color-ffffff);
 						}
 					}
 
 					&:hover {
-						background: var(--ant-studio-color-74081d) 0% 0% no-repeat padding-box;
+						background: var(--test-color-74081d) 0% 0% no-repeat padding-box;
 					}
 				}
 

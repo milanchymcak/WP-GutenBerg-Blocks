@@ -3,7 +3,7 @@
   "apiVersion": 2,
   "name": "mchymcak/contactform",
   "version": "1.0",
-  "title": "Ant Studio - Contact Form",
+  "title": "Test Project - Contact Form",
   "category": "theme",
   "icon": "email-alt2",
   "description": "Contact Form",
@@ -14,7 +14,7 @@
   "keywords": [
     "contact"
   ],
-  "textdomain": "ant-studio-example",
+  "textdomain": "text-domain-example",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",

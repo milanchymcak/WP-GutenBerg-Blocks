@@ -2,7 +2,7 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
   "name": "mchymcak/headercontact",
-  "title": "Ant Studio - Header - Contact",
+  "title": "Test Project - Header - Contact",
   "icon": "phone",
   "example": {},
   "description": "Header - Contact",
@@ -10,7 +10,7 @@
   "supports": {
     "html": false
   },
-  "textdomain": "ant-studio-example",
+  "textdomain": "text-domain-example",
   "editorScript": "file:./index.js",
   "parent": [
     "mchymcak/headertop"

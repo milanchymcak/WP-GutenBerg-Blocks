@@ -1,8 +1,8 @@
 .header-block {
-	color: var(--ant-studio-color-ffffff);
+	color: var(--test-color-ffffff);
 
 	.header-block-container {
-		max-width: var(--ant-studio-site-max-width);
+		max-width: var(--test-site-max-width);
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
@@ -21,7 +21,7 @@
 	}
 
 	&.sticked {
-		background: var(--ant-studio-color-ffffff);
+		background: var(--test-color-ffffff);
 		position: sticky;
 		top: 0;
 
@@ -58,7 +58,7 @@
 
 	.header-mobile-menu {
 		display: none;
-		background: var(--ant-studio-color-414755);
+		background: var(--test-color-414755);
 		text-align: center;
 		cursor: pointer;
 		width: 40px;
@@ -75,7 +75,7 @@
 		svg {
 
 			path {
-				fill: var(--ant-studio-color-ffffff);
+				fill: var(--test-color-ffffff);
 			}
 		}
 	}
@@ -111,26 +111,26 @@
 				padding-top: 10px;
 
 				input {
-					color: var(--ant-studio-color-68707c);
+					color: var(--test-color-68707c);
 					padding: 0 12px;
 					height: 36px;
-					border: solid 1px var(--ant-studio-color-ffffff);
-					font-size: var(--ant-studio-font-size-15);
-					background: var(--ant-studio-color-ffffff) 0% 0% no-repeat padding-box;
+					border: solid 1px var(--test-color-ffffff);
+					font-size: var(--test-font-size-15);
+					background: var(--test-color-ffffff) 0% 0% no-repeat padding-box;
 					outline: 0;
 
 					&::placeholder {
-						letter-spacing: var(--ant-studio-character-spacing-0-15);
-						color: var(--ant-studio-color-68707c);
-						font-size: var(--ant-studio-font-size-15);
+						letter-spacing: var(--test-character-spacing-0-15);
+						color: var(--test-color-68707c);
+						font-size: var(--test-font-size-15);
 					}
 				}
 
 				button {
 					width: 36px;
 					height: 36px;
-					background: var(--ant-studio-color-414755);
-					border: solid 1px var(--ant-studio-color-414755);
+					background: var(--test-color-414755);
+					border: solid 1px var(--test-color-414755);
 					display: flex;
 					align-items: center;
 					justify-content: center;
@@ -138,7 +138,7 @@
 					svg {
 
 						path {
-							fill: var(--ant-studio-color-ffffff);
+							fill: var(--test-color-ffffff);
 						}
 					}
 				}
@@ -152,21 +152,21 @@
 				margin-right: 65px;
 
 				.header-contact-title {
-					font-size: var(--ant-studio-font-size-15);
-					letter-spacing: var(--ant-studio-character-spacing-0-15);
-					color: var(--ant-studio-color-68707c);
-					font-weight: var(--ant-studio-font-weight-normal);
+					font-size: var(--test-font-size-15);
+					letter-spacing: var(--test-character-spacing-0-15);
+					color: var(--test-color-68707c);
+					font-weight: var(--test-font-weight-normal);
 				}
 
 				.header-contact-phone {
 					display: block;
 					text-decoration: none;
-					font-family: var(--ant-studio-font-family-din-2014);
-					font-size: var(--ant-studio-font-size-18);
-					font-weight: var(--ant-studio-font-weight-bold);
+					font-family: var(--test-font-family-din-2014);
+					font-size: var(--test-font-size-18);
+					font-weight: var(--test-font-weight-bold);
 
 					&:hover {
-						color: var(--ant-studio-color-74081d) !important;
+						color: var(--test-color-74081d) !important;
 					}
 				}
 
@@ -181,9 +181,9 @@
 			.header-login {
 
 				.header-login-sub-title {
-					letter-spacing: var(--ant-studio-character-spacing-0-15);
-					font-size: var(--ant-studio-font-size-15);
-					color: var(--ant-studio-color-68707c);
+					letter-spacing: var(--test-character-spacing-0-15);
+					font-size: var(--test-font-size-15);
+					color: var(--test-color-68707c);
 				}
 
 				.header-login-title {
@@ -191,36 +191,36 @@
 					align-items: center;
 
 					span {
-						font-weight: var(--ant-studio-font-weight-bold);
+						font-weight: var(--test-font-weight-bold);
 						margin-right: 10px;
-						color: var(--ant-studio-color-414755);
-						font-size: var(--ant-studio-font-size-18);
-						font-family: var(--ant-studio-font-family-din-2014);
+						color: var(--test-color-414755);
+						font-size: var(--test-font-size-18);
+						font-family: var(--test-font-family-din-2014);
 					}
 
 					svg {
 
 						path {
-							fill: var(--ant-studio-color-414755);
+							fill: var(--test-color-414755);
 						}
 					}
 				}
 
 				.header-login-link {
 					text-decoration: none;
-					letter-spacing: var(--ant-studio-character-spacing-0-15);
-					color: var(--ant-studio-color-af0b2b);
-					font-weight: var(--ant-studio-font-weight-normal);
+					letter-spacing: var(--test-character-spacing-0-15);
+					color: var(--test-color-af0b2b);
+					font-weight: var(--test-font-weight-normal);
 					display: flex;
 					align-items: center;
 
 					&:hover {
-						color: var(--ant-studio-color-74081d) !important;
+						color: var(--test-color-74081d) !important;
 
 						svg {
 
 							path {
-								fill: var(--ant-studio-color-74081d);
+								fill: var(--test-color-74081d);
 							}
 						}
 					}
@@ -237,24 +237,24 @@
 
 				.wp-block-navigation-item__content {
 					margin-right: 5px;
-					font-size: var(--ant-studio-font-size-16);
-					font-weight: var(--ant-studio-font-weight-bold);
+					font-size: var(--test-font-size-16);
+					font-weight: var(--test-font-weight-bold);
 					text-decoration: none;
-					color: var(--ant-studio-color-414755);
+					color: var(--test-color-414755);
 
 					&:hover {
-						color: var(--ant-studio-color-74081d);
+						color: var(--test-color-74081d);
 					}
 				}
 
 				.wp-block-navigation__submenu-icon {
-					color: var(--ant-studio-color-414755);
+					color: var(--test-color-414755);
 				}
 
 				.wp-block-navigation__submenu-container {
 
 					.wp-block-navigation-item__content {
-						font-weight: var(--ant-studio-font-weight-normal);
+						font-weight: var(--test-font-weight-normal);
 					}
 				}
 			}
@@ -264,10 +264,10 @@
 				display: block;
 				text-decoration: none;
 				line-height: 1;
-				font-weight: var(--ant-studio-font-weight-normal);
+				font-weight: var(--test-font-weight-normal);
 
 				&:hover {
-					background: var(--ant-studio-color-74081d) !important;
+					background: var(--test-color-74081d) !important;
 				}
 			}
 
@@ -278,7 +278,7 @@
 					display: flex;
 					flex-wrap: wrap;
 					width: 100%;
-					background: var(--ant-studio-color-ffffff);
+					background: var(--test-color-ffffff);
 					padding: 20px;
 
 					.wp-block-navigation {

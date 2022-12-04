@@ -3,7 +3,7 @@
 	"apiVersion": 2,
 	"name": "mchymcak/headerblock",
 	"version": "1.0",
-	"title": "Ant Studio - Header Block",
+	"title": "Test Project - Header Block",
 	"category": "theme",
 	"icon": "laptop",
 	"description": "Fixovaná hlavička.",
@@ -11,8 +11,8 @@
 		"html": false
 	},
 	"example": {},
-	"keywords": [ "header", "hlavicka", "ant studio" ],
-	"textdomain": "ant-studio-example",
+	"keywords": [ "header", "hlavicka", "Test Project" ],
+	"textdomain": "text-domain-example",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css"

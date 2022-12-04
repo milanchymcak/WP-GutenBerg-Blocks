@@ -1,11 +1,11 @@
 .slider-block {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: var(--ant-studio-site-max-width);
+	max-width: var(--test-site-max-width);
 	width: 100%;
 	margin: 0 auto;
 	padding: 25px 0 0;
-	background: var(--ant-studio-color-ffffff);
+	background: var(--test-color-ffffff);
 
 	.slider-image {
 		width: 65%;
@@ -26,13 +26,13 @@
 
 		.slider-text-inner {
 			color: #ad102f;
-			font-weight: var(--ant-studio-font-weight-bold);
-			font-size: var(--ant-studio-font-size-22);
-			font-family: var(--ant-studio-font-family-din-2014);
+			font-weight: var(--test-font-weight-bold);
+			font-size: var(--test-font-size-22);
+			font-family: var(--test-font-family-din-2014);
 			display: none;
 			border-left: 2px solid;
 			padding: 20px 0 20px 15px;
-			line-height: var(--ant-studio-line-spacing-25);
+			line-height: var(--test-line-spacing-25);
 
 			&.active {
 				display: block;
@@ -56,9 +56,9 @@
 	.slider-info {
 		width: 90%;
 		text-align: center;
-		font-size: var(--ant-studio-font-size-22);
-		font-weight: var(--ant-studio-font-weight-bold);
-		font-family: var(--ant-studio-font-family-din-2014);
+		font-size: var(--test-font-size-22);
+		font-weight: var(--test-font-weight-bold);
+		font-family: var(--test-font-family-din-2014);
 		color: #722a2d;
 		padding-bottom: 15px;
 		display: flex;
@@ -97,10 +97,10 @@
 			display: block;
 			text-decoration: none;
 			line-height: 1;
-			font-weight: var(--ant-studio-font-weight-normal);
+			font-weight: var(--test-font-weight-normal);
 
 			&:hover {
-				background: var(--ant-studio-color-74081d) !important;
+				background: var(--test-color-74081d) !important;
 			}
 
 			@media only screen and (max-width: 768px) {
@@ -119,7 +119,7 @@
 		width: 100%;
 		display: flex;
 		justify-content: center;
-		background: var(--ant-studio-color-f3f5f6);
+		background: var(--test-color-f3f5f6);
 		padding: 15px 0;
 
 		@media only screen and (max-width: 768px) {
@@ -131,17 +131,17 @@
 		.slider-tab {
 			text-transform: uppercase;
 			margin: 0 15px;
-			color: var(--ant-studio-color-68707c);
-			font-weight: var(--ant-studio-font-weight-bold);
-			letter-spacing: var(--ant-studio-character-spacing-0-15);
+			color: var(--test-color-68707c);
+			font-weight: var(--test-font-weight-bold);
+			letter-spacing: var(--test-character-spacing-0-15);
 			cursor: pointer;
 
 			&.active {
-				color: var(--ant-studio-color-af0b2b);
+				color: var(--test-color-af0b2b);
 			}
 
 			&:hover {
-				color: var(--ant-studio-color-74081d) !important;
+				color: var(--test-color-74081d) !important;
 			}
 
 			@media only screen and (max-width: 768px) {

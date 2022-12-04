@@ -25,14 +25,14 @@ registerBlockType( metadata.name, {
 				<InspectorControls>
 					<PanelBody
 						initialOpen={ false }
-						title={ __( 'Nastavení Barev', 'ant-studio-example' ) }
+						title={ __( 'Nastavení Barev', 'text-domain-example' ) }
 					>
 						<NewColorPalette
 							attributes={ attributes }
 							setAttributes={ setAttributes }
 							label={ __(
 								'Barva Tel. Čísla',
-								'ant-studio-example'
+								'text-domain-example'
 							) }
 							target="text_Color"
 							default={ attributes.text_Color }

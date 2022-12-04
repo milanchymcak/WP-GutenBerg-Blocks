@@ -25,13 +25,13 @@ registerBlockType( metadata.name, {
 						initialOpen={ false }
 						title={ __(
 							'Nastavení Vyhledávání',
-							'ant-studio-example'
+							'text-domain-example'
 						) }
 					>
 						<TextControl
 							label={ __(
 								'Vyhledávání Placeholder',
-								'ant-studio-example'
+								'text-domain-example'
 							) }
 							value={ attributes.search }
 							onChange={ ( val ) =>
